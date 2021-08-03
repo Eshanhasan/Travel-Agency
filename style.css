@@ -1,0 +1,796 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+* {
+  font-family: "Baloo Chettan 2", cursive;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(90, 90, 90);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 28px 0px;
+  color: white;
+}
+.travellogo {
+  margin: 20px 40px;
+  font-size: 27px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.travellogo span {
+  color: orange;
+}
+.lists {
+  padding: 0px 20px;
+  cursor: pointer;
+  transition: 150ms;
+  font-weight: bold;
+}
+.lists:hover {
+  color: orange;
+}
+.searchlogo i {
+  color: white;
+  margin: 32px 0px;
+  transition: 150ms;
+  cursor: pointer;
+}
+.searchlogo:hover {
+  cursor: pointer;
+}
+.searchlogo i:hover {
+  color: orange;
+}
+.logsign {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 27px 0px;
+  margin-right: 40px;
+  font-weight: bold;
+}
+.login {
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 150ms;
+}
+.signup {
+  cursor: pointer;
+  transition: 150ms;
+}
+.searchbox1 {
+  position: fixed;
+  top: 54px;
+  right: 215px;
+  display: none;
+  border-radius: 5px;
+  transition: 150ms;
+  z-index: 10001;
+}
+.searchbox1 i {
+  color: white;
+  padding: 0px 3px;
+  margin: 1px 0px;
+}
+.searchbox1 input {
+  text-decoration: none;
+  outline: none;
+  border-radius: 5px;
+}
+.login:hover,
+.signup:hover {
+  transform: scale(1.1);
+  color: orange;
+}
+.loginbox {
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+  top: 100px;
+  right: 50px;
+  border-radius: 30px;
+  width: 265px;
+  box-shadow: 0px 0px 10px black;
+  display: none;
+}
+.bx {
+  display: block;
+  margin: 13px auto;
+  padding: 7px 10px;
+  border: none;
+  outline-color: orange;
+}
+.submit {
+  display: block;
+}
+.loginbox h4 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0px;
+  color: orange;
+}
+#remember {
+  margin-left: 56px;
+}
+.submit {
+  margin: 10px auto;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  transition: 150ms;
+}
+.submit:hover {
+  background-color: orange;
+  color: white;
+}
+.loginbox p {
+  text-align: center;
+  font-size: 14px;
+}
+.loginbox p a {
+  color: orange;
+}
+.loginbox i {
+  position: relative;
+  left: 227px;
+  margin: 10px 0px;
+  font-size: 25px;
+  transition: 150ms;
+  cursor: pointer;
+}
+.loginbox i:hover {
+  color: orange;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  margin: 0px 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  background: none;
+  background: url(pexels-photo-132037.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 620px;
+}
+.container h1 {
+  margin-top: 230px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+.container p {
+  margin: -35px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+.discover {
+  font-size: 20px;
+  color: white;
+  background-color: orange;
+  border-radius: 20px;
+  width: 190px;
+  margin: 60px auto;
+  padding: 10px 0px;
+  transition: 150ms;
+  cursor: pointer;
+}
+.discover:hover {
+  background-color: orangered;
+}
+.booksection {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 670px;
+}
+.book span {
+  border: 2px solid orangered;
+  margin: 0px 3px;
+  padding: 2px 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 15px;
+  color: orangered;
+  cursor: pointer;
+}
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info p {
+  font-weight: bold;
+  text-align: left;
+  font-size: 23px;
+  margin: 10px 0px;
+}
+.info input {
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orangered;
+  transition: 150ms;
+}
+.info {
+  padding: 19px 65px;
+  margin-left: 170px;
+  margin-top: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px black;
+}
+.image img {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px black;
+}
+.bk {
+  margin-top: 20px;
+  border: 2px solid orangered;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: orangered;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 150ms;
+}
+.bk:hover {
+  color: orangered;
+  background-color: white;
+}
+.info {
+  width: 355px;
+}
+.packeges {
+  margin-top: 50px;
+}
+.packeges span {
+  border: 2px solid orangered;
+  margin: 0px 3px;
+  padding: 2px 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 15px;
+  color: orangered;
+  cursor: pointer;
+}
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.loc {
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px black;
+  margin: 5px 10px;
+  text-align: left;
+  width: 318px;
+}
+.loc img {
+  border-radius: 10px;
+  height: 190px;
+  width: 100%;
+  display: block;
+}
+.loc i {
+  font-size: 25px;
+  margin: 5px 10px;
+  color: orangered;
+  margin-top: 5px;
+}
+.loc h4 {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.loc p {
+  margin: 0px 5px;
+}
+#l {
+  font-size: 15px;
+  margin: 0;
+}
+.star {
+  margin-left: 5px;
+}
+.tk {
+  font-size: 20px;
+  font-weight: bold;
+}
+.booknow {
+  display: block;
+  margin: 5px auto;
+  padding: 5px 20px;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  background: none;
+  background-color: orangered;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 150ms;
+}
+.booknow:hover {
+  background: none;
+  color: orangered;
+}
+
+.services {
+  margin-top: 100px;
+}
+.services span {
+  border: 2px solid orangered;
+  margin: 0px 3px;
+  padding: 2px 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 15px;
+  color: orangered;
+  cursor: pointer;
+}
+.srvc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.numbers {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin: 45px 18px;
+  padding: 10px 20px;
+  width: 21%;
+  transition: 150ms;
+  cursor: pointer;
+}
+.numbers i {
+  font-size: 45px;
+  color: orangered;
+  margin-top: 6px;
+}
+.numbers h2 {
+  margin: 10px 0px;
+  font-size: 30px;
+}
+.numbers p {
+  margin: 5px 5px;
+  text-align: justify;
+}
+.contact {
+  margin-top: 50px;
+}
+.contact span {
+  border: 2px solid orangered;
+  margin: 0px 3px;
+  padding: 2px 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 15px;
+  color: orangered;
+  cursor: pointer;
+}
+.contactbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.frm {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  margin: 0px 30px;
+}
+.frm input {
+  margin: 15px 20px;
+  padding: 5px 20px;
+  font-size: 20px;
+  width: 170px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orangered;
+}
+.frm textarea {
+  margin: 15px 20px;
+  padding: 5px 20px;
+  font-size: 20px;
+  width: 170px;
+  height: 150px;
+  border: none;
+  outline: none;
+  border: 2px solid orangered;
+  border-radius: 10px;
+}
+.msg {
+  margin: 5px auto;
+  padding: 5px 10px;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  width: 140px;
+  color: white;
+  background-color: orangered;
+  font-weight: bold;
+  transition: 150ms;
+  cursor: pointer;
+}
+.msg:hover {
+  background-color: white;
+  color: orangered;
+}
+.frm img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+  background-color: rgb(90, 90, 90);
+  height: 500px;
+}
+.abt {
+  width: 250px;
+  color: white;
+  text-align: center;
+}
+.footer h3 {
+  font-size: 25px;
+}
+.footer p {
+  transition: 150ms;
+}
+.footer p:hover {
+  color: orange;
+  cursor: pointer;
+}
+.lastline {
+  color: white;
+  background-color: rgb(90, 90, 90);
+  height: 50px;
+  margin-top: -50px;
+  padding: 10px 0px;
+  border-top: 2px solid white;
+}
+.lastline span {
+  color: orange;
+}
+.bngla {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 40px;
+  display: none;
+}
+.ok {
+  margin: 10px 10px;
+  background-color: orangered;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 150ms;
+}
+.ok:hover {
+  background-color: orange;
+}
+.menu, .menubox{
+  display: none;
+}
+@media only screen and (max-width: 1160px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar {
+    display: block;
+    height: 56px;
+    overflow-x: hidden;
+  }
+  .menu{
+    display: inline;
+    position: fixed;
+    top: 6px;
+    left: 8px;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 0px 8px;
+    color: white;
+    border-radius: 5px;
+  }
+  .menu:hover{
+    border: 1px solid orange;
+    color: orange;
+  }
+  .menubox{
+    position: fixed;
+    top: 42px;
+    left: 20px;
+    background-color: rgb(90, 90, 90);
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    display: none;
+    transition: 150ms;
+  }
+  .menubox p{
+    margin: -1px 0px;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 4px 0px;
+  }
+  .menubox p:hover{
+    color: orange;
+  }
+  .travellogo {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  .list {
+    width: 100%;
+    margin: 5px 0px;
+    text-align: center;
+    display: none;
+  }
+  .lists {
+    font-size: 18px;
+    padding: 0px 10px;
+    text-align: center;
+    display: none;
+  }
+  .searchlogo {
+    display: inline;
+    position: absolute;
+    top: 32px;
+    right: 120px;
+  }
+  .searchlogo i {
+    display: inline;
+    margin: 0;
+  }
+  .book {
+    width: 100%;
+  }
+  .logsign {
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    overflow-x: hidden;
+  }
+  .login {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .loginbox {
+    position: fixed;
+    top: 60px;
+    right: 42px;
+  }
+  .searchbox1 {
+    position: absolute;
+    top: 32px;
+    right: 108px;
+  }
+  .searchbox1 input {
+    font-size: 10px;
+  }
+  .container h1 {
+    font-size: 15px;
+    margin-top: 142px;
+  }
+  .container p {
+    font-size: 10px;
+    margin-top: -12px;
+  }
+  .discover {
+    font-size: 10px;
+    color: white;
+    background-color: orange;
+    border-radius: 20px;
+    width: 82px;
+    margin: 48px auto;
+    padding: 3px 0px;
+    transition: 150ms;
+    cursor: pointer;
+  }
+  .container {
+    height: 280px;
+  }
+  .booksection {
+    position: absolute;
+    top: 320px;
+  }
+  .book span {
+    font-size: 15px;
+    padding: 0px 8px;
+  }
+  .places .image {
+    display: none;
+  }
+  .info {
+    width: 50%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .info input {
+    font-size: 12px;
+  }
+  .bk {
+    margin-top: 15px;
+    border: 2px solid orangered;
+    padding: 0px 0px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: orangered;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 150ms;
+  }
+  .packeges span {
+    font-size: 15px;
+    padding: 0px 8px;
+    margin-top: 25px;
+  }
+  .location {
+    margin-top: 15px;
+  }
+  .loc {
+    width: 140px;
+    margin: 5px 5px;
+  }
+  .loc img {
+    height: 115px;
+  }
+  .loc i {
+    font-size: 15px;
+    margin: 7px 6px;
+  }
+  .loc h4 {
+    font-size: 18px;
+  }
+  .loc p {
+    font-size: 10px;
+  }
+  #l {
+    font-size: 10px;
+  }
+  .booknow {
+    display: block;
+    margin: 5px auto;
+    padding: 0px 8px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    background: none;
+    background-color: orangered;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 150ms;
+  }
+  .services {
+    margin-top: 25px;
+  }
+  .services span {
+    font-size: 15px;
+    padding: 0px 8px;
+    margin-top: 25px;
+  }
+  .numbers {
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    width: 130px;
+    transition: 150ms;
+    cursor: pointer;
+  }
+  .numbers i {
+    font-size: 20px;
+  }
+  .numbers h2 {
+    margin: 5px 0px;
+    font-size: 15px;
+  }
+  .numbers p {
+    font-size: 10px;
+  }
+  .contact {
+    margin-top: 25px;
+  }
+  .contact span {
+    font-size: 15px;
+    padding: 0px 8px;
+    margin-top: 25px;
+  }
+  #frm1 {
+    display: none;
+  }
+  .frm {
+    width: 100%;
+    margin: 10px 20px;
+    height: 452px;
+  }
+  .frm input {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+  .frm textarea {
+    font-size: 15px;
+    height: 100px;
+  }
+  .msg {
+    margin: 0px auto;
+    padding: 0px 0px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    width: 130px;
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+    transition: 150ms;
+    cursor: pointer;
+  }
+  .footer {
+    margin-top: 16px;
+    height: 225px;
+  }
+  .abt {
+    width: 80px;
+  }
+  .abt h3 {
+    margin: 5px 0px;
+    font-size: 13px;
+  }
+  .abt p {
+    font-size: 8px;
+    margin: 3px 3px;
+  }
+  .lastline {
+    height: 15px;
+  }
+  .lastline p {
+    margin: 0;
+    font-size: 10px;
+  }
+  .bngla{
+    font-size: 10px;
+  }
+}
